@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive HTML Form Example</title>
+</head>
+<body>
+    <h1>FilL in your information</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Form</legend>
+
+            <label for="firstName">First Name:</label>
+            <br>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name:</label>
+            <br>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>your Gender:</label><br><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label>Favorit Subjects</label><br>
+            <br>
+            <input type="checkbox" id="reading" name="hobbies" value="C++">
+            <label for="reading">C++</label>
+            <input type="checkbox" id="traveling" name="hobbies" value="Java">
+            <label for="traveling">Java</label>
+            <input type="checkbox" id="cooking" name="hobbies" value="C#">
+            <label for="cooking">C#</label>
+            <input type="checkbox" id="cooking" name="hobbies" value="PHP">
+            <label for="cooking">PHP</label>
+            <input type="checkbox" id="cooking" name="hobbies" value="Sql">
+            <label for="cooking">Sql</label>
+            <br>
+            <br>
+            <label for="country">city:</label>
+            <select id="country" name="country">
+                <option value="usa">Ibid</option>
+                <option value="canada">Amman</option>
+                <option value="uk">Jarash</option>
+                <option value="australia">zarqa</option>
+            </select><br><br>
+
+            <label for="resume">Upload images</label>
+            <input type="file" id="resume" name="resume"><br><br>
+
+            <label for="bio">Write about yourself::</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50" maxlength="255"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
